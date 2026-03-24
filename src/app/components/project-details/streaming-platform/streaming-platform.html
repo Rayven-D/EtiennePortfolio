@@ -1,0 +1,226 @@
+<div class="container">
+    <div class="return">
+        <span class="material-icons-outlined">
+            arrow_back
+        </span>
+        <span class="text" (click)="navigateToProjects()">RETURN TO PROJECTS</span>
+    </div>
+    <div class="header-card">
+        <div class="header-image">
+            <img src="assets/images/streaming_platform_ux.png" alt="Project Image"/>
+        </div>
+        <div class="header-middle">
+            <div class="project-id">
+                <span>PROJECT_ID:</span>
+                <span class="bodyBold">PROJ_001</span>
+            </div>
+            <div class="project-tools">
+                <span>TOOLS:</span>
+                <span class="bodyBold">FIGMA</span>
+            </div>
+            <div class="project-role">
+                <span>ROLE:</span>
+                <span class="bodyBold">LEAD UX/UI DESIGNER</span>
+            </div>
+            <div class="project-status">
+                <span>STATUS:</span>
+                <span class="bodyBold">COMPLETE</span>
+            </div>
+        </div>
+        <div class="header-title">
+            <div class="title-header">
+                <div class="square"></div>
+                <span>UX/UI DESIGN - 2025</span>
+            </div>
+            <span class="subtitle1--bold">STREAMING PLATFORM UX</span>
+            <span class="bodyNormal">Designing a cross-platform streaming experience with a focus on intuitive navigation and interaction across TV and mobile.</span>
+        </div>
+    </div>
+
+    <!-- project-overview -->
+     <section class="project-overview column">
+        <span class="subtitle2">PROJECT_OVERVIEW</span>
+        <span>
+            Designed a cross-platform streaming experience using Reddit’s brand system for both TV and mobile. <br/>
+            Focused on creating intuitive navigation and clear interaction across different input types, with special attention 
+            to remote-based navigation on TV. The goal was to make content browsing and discovery simple, consistent, and easy 
+            to use across devices.
+        </span>
+     </section>
+
+    <!-- target audience -->
+     <section class="target-audience column">
+        <span class="subtitle2">TARGET_AUDIENCE</span>
+        <span>
+            Designed for users who browse and watch content across TV and mobile.
+            <ul>
+                <li>Users who want simple, intuitive navigation</li>
+                <li>Viewers using remote controls (TV) and touch (mobile)</li>
+                <li>People familiar with content-heavy platforms like Reddit or streaming apps</li>
+            </ul>
+        </span>
+     </section>
+
+    <!-- phase1: research -->
+    <section class="phase-card phase1 column">
+        <header>
+            <div class="phase-number">
+                01
+            </div>
+            <div class="phase-title column">
+                <span class="phase-name subtitle2--bold">PHASE_01: RESEARCH</span>
+                <span class="phase-caption">[RESEARCH & DISCOVERY]</span>
+            </div>
+        </header>
+        <div class="phase-content">
+            <div class="text">
+                <span class="description-text">
+                    Conducted research on Reddit's brand system and analyzed streaming 
+                    platform patterns to understand navigation behaviors across TV and mobile environments. 
+                    Identified key usability challenges specific to remote-based interaction.
+                </span>
+                <ul>
+                    <li>Analysis of Reddit brand guidelines (color, typography, tone)</li>
+                    <li>Competitive audit of streaming platforms (Netflix, Apple TV, etc.)</li>
+                    <li>Navigation pattern analysis for TV interfaces</li>
+                    <li>Identification of pain points in remote-based navigation</li>
+                    <li>Review of mobile vs TV interaction differences</li>
+                </ul>
+            </div>
+        </div>
+     </section>
+
+    <!-- phase2: early design -->
+    <section class="phase-card phase2 column">
+        <header>
+            <div class="phase-number">
+                02
+            </div>
+            <div class="phase-title column">
+                <span class="phase-name subtitle2--bold">PHASE_02: EARLY DESIGN</span>
+                <span class="phase-caption">[IDEATION & WIREFRAMING]</span>
+            </div>
+        </header>
+        <div class="phase-content row">
+            <div class="text">
+                <span class="description-text">
+                    Explored multiple layout directions focusing on navigation clarity, content hierarchy, 
+                    and cross-platform consistency. Developed low-fidelity structures to test usability and 
+                    interaction flow.
+                </span>
+                <ul>
+                    <li>Sketching and layout exploration (multiple navigation structures)</li>
+                    <li>Information architecture for content browsing</li>
+                    <li>Low-fidelity wireframes for TV and mobile</li>
+                    <li>Exploration of horizontal vs vertical navigation systems</li>
+                    <li>Early validation of navigation flows</li>
+                </ul>
+            </div>
+            <div class="image">
+                <app-picture-carosel [images]="phase2Images"></app-picture-carosel>
+            </div>
+        </div>
+     </section>     
+
+    <!-- phase3: interactive components -->
+     <section class="phase-card phase3 column">
+        <header>
+            <div class="phase-number">
+                03
+            </div>
+            <div class="phase-title column">
+                <span class="phase-name subtitle2--bold">PHASE_03: INTERACTIVE COMPONENTS</span>
+                <span class="phase-caption">[INTERACTION & PROTOTYPING]</span>
+            </div>
+        </header>
+        <div class="phase-content">
+            <div class="text">
+                <span class="description-text">
+                    Built interactive components and defined behavior systems for both
+                    TV and mobile interfaces. Focused on creating clear feedback and 
+                    focus states to support remote navigation.
+                </span>
+                <ul>
+                    <li>Development of interactive UI components</li>
+                    <li>Focus state system for remote navigation (TV)</li>
+                    <li>Motion and transition design for feedback clarity</li>
+                    <li>Cross-platform interaction consistency</li>
+                    <li>Prototype flows for core user journeys</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="assets/images/streaming-platform/phase3.png">
+            </div>
+        </div>
+     </section> 
+
+    <!-- phase: 4 Final TV Design -->
+    <section class="phase-card phase3 column">
+        <header>
+            <div class="phase-number">
+                04
+            </div>
+            <div class="phase-title column">
+                <span class="phase-name subtitle2--bold">PHASE_04: FINAL TV DESIGN</span>
+                <span class="phase-caption">[REMOTE-BASED NAVIGATION]</span>
+            </div>
+        </header>
+        <div class="phase-content">
+            <div class="text">
+                <span class="description-text">
+                    Designed a streaming experience optimized for large screens and 
+                    remote-based interaction. Focused on creating clear navigation 
+                    patterns and strong visual feedback to support directional input.
+                </span>
+                <ul>
+                    <li>Horizontal browsing system for content discovery</li>
+                    <li>Strong focus states to indicate current selection</li>
+                    <li>Clear visual feedback for all interactions</li>
+                    <li>Optimized layout for readability at distance</li>
+                    <li>Navigation designed for directional (D-pad) input</li>
+                    <li>Reduced cognitive load through simplified hierarchy</li>
+                </ul>
+            </div>
+            <div class="image">
+                <app-picture-carosel [images]="phase4Images"></app-picture-carosel>
+            </div>
+        </div>
+     </section> 
+
+    <!-- phse: 5 Final Mobile Design -->
+    <section class="phase-card phase3 column">
+        <header>
+            <div class="phase-number">
+                05
+            </div>
+            <div class="phase-title column">
+                <span class="phase-name subtitle2--bold">PHASE_05: FINAL MOBILE DESIGN</span>
+                <span class="phase-caption">[TOUCH INTERACTION]</span>
+            </div>
+        </header>
+        <div class="phase-content row">
+            <div class="text">
+                <span class="description-text">
+                    Adapted the experience for mobile by prioritizing speed, 
+                    accessibility, and thumb-friendly interaction patterns. 
+                    Simplified navigation structure to support quick content access.
+                </span>
+                <ul>
+                    <li>Vertical scrolling for intuitive browsing</li>
+                    <li>Thumb-friendly layout and interaction zones</li>
+                    <li>Simplified navigation with reduced steps</li>
+                    <li>Faster access to key content and actions</li>
+                    <li>Touch-based gestures replacing directional input</li>
+                    <li>Optimized density for smaller screens</li>
+                </ul>
+            </div>
+            <div class="image">
+                <app-picture-carosel [images]="phase5Images"></app-picture-carosel>
+            </div>
+        </div>
+    </section> 
+
+    <section class="prototype-link">
+        <a href="https://www.figma.com/proto/PkeEeKRmOlIRUcSp0zmvm7/Project-4-Visual-Design?node-id=24-458&p=f&t=i8iFhC9AqTqrao5k-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=24%3A458" target="_blank">View Prototype in Figma</a>
+    </section>
+</div>

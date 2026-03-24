@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class Home {
 
+  public projec1Hover:boolean = false;
+
   constructor(
     private _router: Router
   ) {
@@ -17,5 +19,9 @@ export class Home {
   
   public navigateToAbout(): void {
     this._router.navigate(['/about']);
+  }
+
+  public navigateToProject(project: string): void {
+    this._router.navigate(['/projects', project]);
   }
 }

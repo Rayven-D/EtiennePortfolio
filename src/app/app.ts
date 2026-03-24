@@ -16,10 +16,11 @@ export class App {
     private _router: Router,
     private _activatedRoute: ActivatedRoute
   ) {
+
     this._router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe((e: NavigationEnd) => {
       if(e.url === "home") {
         this.currentPage = 0;
-      } else if(e.url === "/projects") {
+      } else if(e.url.includes("/projects")) {
         this.currentPage = 1;
       } else if(e.url === "/about") {
         this.currentPage = 2;

@@ -16,7 +16,7 @@
         border: 1px solid var(--accent-color);
         border-radius: 8px;
 
-        grid-template-columns: 1fr 35%;
+        grid-template-columns: 1fr 36%;
 
 
         background-image: 
@@ -45,12 +45,13 @@
             padding: .5rem;
             text-align: center;
             background-color: var(--primary-color);
+            width: fit-content
         }
 
         .bottom-left {
             display: flex;
             flex-direction: column;
-            gap: .5rem;
+            gap: 1rem;
             .bold {
                 font-weight: 700;
             }
@@ -75,7 +76,11 @@
                 padding: 1rem;
                 font-weight: 700;
 
-
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                }
             }
         }
     }
@@ -89,7 +94,7 @@
             width: 350px;
             word-wrap:normal;
             font-weight: 700;
-            font-size: 36px;
+            font-size: 32px;
         }
 
         .divider-icon {
@@ -126,11 +131,13 @@
                 flex: 1;
                 border: 1px solid var(--accent-color);
                 border-radius: 8px;
+                cursor: pointer;
                 img{
-                    height: 100%;
                     border-radius: 7px 7px 0 0;
                     width: 100%;
                     height: auto;
+                    max-height: 225px;
+                    object-fit: cover;
                     background-color: var(--darkgrey-color);
                 }
 
@@ -143,14 +150,14 @@
                     padding: 1rem;
 
                     .view-case-study {
-
+                        width: fit-content;
                         display: flex;
                         align-items: center;
                         text-align: center;
                         border-bottom: 1px solid transparent;
 
 
-                        &:hover{
+                        &.hovering{
                             cursor: pointer;
                             border-bottom: 1px solid var(--accent-color);
                         }

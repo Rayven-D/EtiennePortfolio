@@ -21,6 +21,7 @@
         flex-direction: column;
         gap: 1rem;
         width: 80%;
+        min-width: 900px;
         margin: 0 auto;
 
         .project-card {
@@ -108,11 +109,12 @@
                         align-items: center;
                         height: 40px;
                         cursor: pointer;
+                        gap: 1rem;
+                        justify-content: center;
                         .text {
                             display: flex;
                             align-items: center;
-                            justify-content: space-evenly;
-                            width: 100%;
+                            justify-content: space-around;
                         }
                     }
                 }

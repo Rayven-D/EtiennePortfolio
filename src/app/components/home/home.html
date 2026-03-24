@@ -19,8 +19,8 @@
             </div>
         </div>
         <div class="bottom-right">
-            <div class="about-me subtitle2" (click)="navigateToAbout()">
-                ABOUT ME <span class="material-icons-outlined">arrow_forward</span>
+            <div class="about-me subtitle2 custom-button-hover-effect" (click)="navigateToAbout()">
+                <span>ABOUT ME <span class="material-icons-outlined">arrow_forward</span></span>
             </div>
         </div>
     </section>
@@ -42,12 +42,13 @@
     <section class="projects">
         <div class="project-card">
             <div class="project-id">PROJ_001</div>
-            <div class="project-card-content">
-                <img src="assets/images/home_project_filler.png"/>
+            <div class="project-card-content" (click)="navigateToProject('streaming-platform')" (mouseenter)="projec1Hover = true" (mouseleave)="projec1Hover = false">
+                    <img [style.display]="!projec1Hover ? 'none' : 'block'" src="assets/images/streaming_platform_ux.png"/>
+                    <img [style.display]="!projec1Hover ? 'block' : 'none'" src="assets/images/project_filler.png"/>
                 <div class="text">
                     <span class="subtitle2">STREAMING PLATFORM UX</span>
                     <span class="caption">Designing a cross-platform streaming experience with a focus on intuitive navigation and interaction across TV and mobile.</span>
-                    <span class="caption view-case-study">View Case Study <span class="material-icons-outlined">arrow_forward</span></span>
+                    <span class="caption view-case-study" [class.hovering]="projec1Hover">View Case Study <span class="material-icons-outlined">arrow_forward</span></span>
                 </div>
             </div>
 
@@ -55,7 +56,7 @@
         <div class="project-card">
             <div class="project-id">PROJ_002</div>
             <div class="project-card-content">
-                <img src="assets/images/home_project_filler.png"/>
+                <img src="assets/images/project_filler.png"/>
                 <div class="text">
                     <span class="subtitle2">PROJECT TITLE TWO</span>
                     <span class="caption">
