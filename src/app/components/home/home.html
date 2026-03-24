@@ -40,7 +40,7 @@
     </section>
 
     <section class="projects">
-        <div class="project-card">
+        <div class="project-card fade-in-left" [class.visible]="projectsAnimationLoad[1]" (click)="navigateToProject('streaming-platform')">
             <div class="project-id">PROJ_001</div>
             <div class="project-card-content" (click)="navigateToProject('streaming-platform')" (mouseenter)="projec1Hover = true" (mouseleave)="projec1Hover = false">
                     <img [style.display]="!projec1Hover ? 'none' : 'block'" src="assets/images/streaming_platform_ux.png"/>
@@ -53,7 +53,7 @@
             </div>
 
         </div>
-        <div class="project-card">
+        <div class="project-card fade-in-left" [class.visible]="projectsAnimationLoad[0]">
             <div class="project-id">PROJ_002</div>
             <div class="project-card-content">
                 <img src="assets/images/project_filler.png"/>

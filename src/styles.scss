@@ -110,6 +110,8 @@ html, body {
     background-color: var(--highlight-color);
 }
 
+//animations
+
 .custom-button-hover-effect{
     position: relative;
     overflow: hidden;
@@ -128,5 +130,18 @@ html, body {
     &:hover::before{
         scale: 1.1;
         transform: translateX(1%);
+    }
+}
+
+.fade-in-left{
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: 
+        opacity .5s ease-out,
+        transform .5s cubic-bezier(0.25, 0.510, 0.55, 1.5);
+
+    &.visible{
+        opacity: 1;
+        transform: translateX(0);
     }
 }

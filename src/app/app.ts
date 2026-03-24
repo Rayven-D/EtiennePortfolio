@@ -5,7 +5,7 @@ import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLinkWithHref, RouterLinkActive, NgClass],
+  imports: [RouterOutlet, NgClass],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
