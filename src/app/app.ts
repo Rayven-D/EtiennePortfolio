@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('etienne-portfolio');
+
+  constructor(
+    private _router: Router
+  ) {}
+
+  public navigateTo(path: string): void {
+    console.log('here')
+    this._router.navigate([path]);
+  }
 }
