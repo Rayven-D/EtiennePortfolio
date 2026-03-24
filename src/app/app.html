@@ -4,17 +4,39 @@
       <img src="assets/logos/ea_branding_logo.svg"/>
     </section>
     <section class="app-header-right">
-      <nav class="app-nav">
-        <a class="app-nav-link" (click)="navigateTo('')">HOME</a>
-        <a class="app-nav-link" (click)="navigateTo('projects')">PROJECTS</a>
-        <a class="app-nav-link" (click)="navigateTo('about')">ABOUT</a>
-      </nav>
+      <div class="app-nav">
+        <div class="app-nav-link" [ngClass]="{ 'active': currentPage == 0 }" (click)="navigateTo('home')">HOME</div>
+        <div class="app-nav-link" [ngClass]="{ 'active': currentPage == 1 }" (click)="navigateTo('projects')">PROJECTS</div>
+        <div class="app-nav-link" [ngClass]="{ 'active': currentPage == 2 }" (click)="navigateTo('about')">ABOUT</div>
+      </div>
     </section>
   </header>
   <section class="app-content">
     <router-outlet></router-outlet>
   </section>
   <footer class="app-footer">
-    
+    <div class="footer-left">
+      <img src="assets/logos/footer_logo.svg"/>
+      <span>© 2026 ETIENNE AMADOR</span>
+    </div>
+    <div class="footer-contact">
+      <span class="subtitle2">CONTACT</span>
+      <span>[etienne.amador@example.com]</span>
+      <span>[+1 (123) 456-7890]</span>
+    </div>
+    <div class="footer-socials">
+      <span class="subtitle2">SOCIALS</span>
+      <div class="socials-grid">
+        <div class="socials-button">
+          LI
+        </div>
+        <div class="socials-button">
+          YU
+        </div>
+      </div>
+    </div>
+    <div class="footer-coordinates">
+      <span class="captionFont">LAT: 13.19° N | LONG: 169.15° W</span>
+    </div>
   </footer>
 </div>
