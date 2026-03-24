@@ -24,7 +24,7 @@ export class Home implements AfterViewInit {
         setTimeout(() => {
           this.projectsAnimationLoad[index] = true;
           this._cdr.detectChanges();
-        }, 75 * (index + 1)); 
+        }, 100 * (index === 0 ? .1 : index)); 
       });
   }
   

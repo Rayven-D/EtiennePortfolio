@@ -21,7 +21,7 @@ export class Projects implements AfterViewInit {
         setTimeout(() => {
           this.projectsAnimationLoad[index] = true;
           this._cdr.detectChanges();
-        }, 150 * (index + 1)); 
+        }, 150 * (index === 0 ? .1 : index)); 
       });
   }
 
