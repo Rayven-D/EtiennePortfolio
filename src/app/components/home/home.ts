@@ -11,6 +11,7 @@ export class Home implements AfterViewInit {
 
   public projectsAnimationLoad: boolean[] = [false, false];
   public projec1Hover:boolean = false;
+  public project2Hover:boolean = false;
 
   constructor(
     private _router: Router,

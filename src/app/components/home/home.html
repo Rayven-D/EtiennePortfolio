@@ -40,9 +40,9 @@
     </section>
 
     <section class="projects">
-        <div class="project-card fade-in-left" [class.visible]="projectsAnimationLoad[1]" (click)="navigateToProject('streaming-platform')">
+        <div class="project-card fade-in-left custom-button-hover-effect-home" [class.visible]="projectsAnimationLoad[1]" (click)="navigateToProject('streaming-platform')">
             <div class="project-id">PROJ_001</div>
-            <div class="project-card-content" (click)="navigateToProject('streaming-platform')" (mouseenter)="projec1Hover = true" (mouseleave)="projec1Hover = false">
+            <div class="project-card-content" (click)="navigateToProject('streaming-platform')" (mouseenter)="projec1Hover = true;" (mouseleave)="projec1Hover = false">
                     <img [style.display]="!projec1Hover ? 'none' : 'block'" src="assets/images/streaming_platform_ux.png"/>
                     <img [style.display]="!projec1Hover ? 'block' : 'none'" src="assets/images/project_filler.png"/>
                 <div class="text">
@@ -53,7 +53,7 @@
             </div>
 
         </div>
-        <div class="project-card fade-in-left" [class.visible]="projectsAnimationLoad[0]">
+        <div class="project-card fade-in-left custom-button-hover-effect-home" [class.visible]="projectsAnimationLoad[0]" (mouseenter)="project2Hover = true;" (mouseleave)="project2Hover = false"> 
             <div class="project-id">PROJ_002</div>
             <div class="project-card-content">
                 <img src="assets/images/project_filler.png"/>
@@ -62,7 +62,7 @@
                     <span class="caption">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </span>
-                    <div class="caption view-case-study">View Case Study <span class="material-icons-outlined">arrow_forward</span></div>
+                    <div class="caption view-case-study" [class.hovering]="project2Hover">View Case Study <span class="material-icons-outlined">arrow_forward</span></div>
                 </div>
             </div>
         </div>

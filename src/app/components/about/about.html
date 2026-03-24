@@ -31,18 +31,20 @@
             </span>
             <span class="subtitle2">CORE_COMPETENCIES</span>
         </header>
-        <section class="competencies-list">
-            @for(skill of skills; track skill.skillName){
-                <div class="skill">
-                    <div class="skill-headers">
-                        <span class="skill-name"><div class="square"></div>{{ skill.skillName }}</span>
-                        <span>{{ skill.level }}%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-filler" [style.width.%]="skill.level" [style.animation-duration]="skill.level * 8 + 'ms'"></div>
+        @defer( on timer(50ms)){
+            <section class="competencies-list">
+                @for(skill of skills; track skill.skillName){
+                    <div class="skill">
+                        <div class="skill-headers">
+                            <span class="skill-name"><div class="square"></div>{{ skill.skillName }}</span>
+                            <span>{{ skill.level }}%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-filler" [style.width.%]="skill.level" [style.animation-duration]="skill.level * 8 + 'ms'"></div>
                     </div>
                 </div>
             }
         </section>  
+    }
     </section>
 </div>

@@ -14,6 +14,7 @@ html, body {
     font-family: 'Source Code Pro', monospace;
     background-color: var(--primary-color);
     color: var(--accent-color);
+    cursor: default;
 }
 
 .header1 {
@@ -112,7 +113,7 @@ html, body {
 
 //animations
 
-.custom-button-hover-effect{
+.custom-button-hover-effect:not(.active) {
     position: relative;
     overflow: hidden;
     z-index: 0;
