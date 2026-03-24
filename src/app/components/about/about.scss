@@ -115,7 +115,7 @@
                         border-radius: 8px;
 
                         transform-origin: left;
-                        animation: skills ease-out forwards;
+                        animation: skills cubic-bezier(0.215, 0.01, 0.455, 1.2) forwards;
 
                         @keyframes skills{
                             from {
