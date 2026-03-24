@@ -39,7 +39,7 @@
                         <span>{{ skill.level }}%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-bar-filler" [style.width.%]="skill.level"></div>
+                        <div class="skill-bar-filler" [style.width.%]="skill.level" [style.animation-duration]="skill.level * 15 + 'ms'"></div>
                     </div>
                 </div>
             }
