@@ -1,7 +1,7 @@
 <div class="about-container">
     <section class="about-info">
         <div class="about-image">
-            <img src="assets/images/funny_etienne.png" alt="Profile Picture">
+            <img src="assets/images/etienne_actual.jpg" alt="Profile Picture">
             <span class="image-caption">OPERATOR_PORTRAIT</span>
         </div>
         <div class="about-content">
@@ -32,60 +32,17 @@
             <span class="subtitle2">CORE_COMPETENCIES</span>
         </header>
         <section class="competencies-list">
-            <div class="skill">
-                <div class="skill-headers">
-                    <span class="skill-name"><div class="square"></div>SKILL_1</span>
-                    <span>80%</span>
+            @for(skill of skills; track skill.skillName){
+                <div class="skill">
+                    <div class="skill-headers">
+                        <span class="skill-name"><div class="square"></div>{{ skill.skillName }}</span>
+                        <span>{{ skill.level }}%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-filler" [style.width.%]="skill.level"></div>
+                    </div>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-bar-filler" style="width: 80%"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill-headers">
-                    <span class="skill-name"><div class="square"></div>SKILL_1</span>
-                    <span>67%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-bar-filler" style="width: 67%"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill-headers">
-                    <span class="skill-name"><div class="square"></div>SKILL_1</span>
-                    <span>69%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-bar-filler" style="width: 69%"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill-headers">
-                    <span class="skill-name"><div class="square"></div>SKILL_1</span>
-                    <span>80%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-bar-filler" style="width: 80%"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill-headers">
-                    <span class="skill-name"><div class="square"></div>SKILL_1</span>
-                    <span>80%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-bar-filler" style="width: 80%"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="skill-headers">
-                    <span class="skill-name"><div class="square"></div>SKILL_1</span>
-                    <span>40%</span>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-bar-filler" style="width: 40%"></div>
-                </div>
-            </div>
+            }
         </section>  
     </section>
 </div>

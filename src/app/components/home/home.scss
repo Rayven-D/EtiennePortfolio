@@ -64,6 +64,7 @@
             gap: .5rem;
             
             .about-me {
+                cursor: pointer;
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
@@ -73,6 +74,8 @@
                 border-radius: 8px;
                 padding: 1rem;
                 font-weight: 700;
+
+
             }
         }
     }
@@ -137,7 +140,7 @@
                     flex-direction: column;
                     justify-content: space-between;
                     gap: .5rem;
-                    padding: .5rem;
+                    padding: 1rem;
 
                     .view-case-study {
 

@@ -82,11 +82,17 @@
                 gap: .25rem;
 
                 .socials-button {
+                    cursor: pointer;
                     font-weight: 700;
                     border: 1px solid var(--accent-color);
                     border-radius: 8px;
                     width: min-content;
                     padding: .5rem;
+
+                    &:hover {
+                        background-color: var(--accent-color);
+                        color: var(--primary-color);
+                    }
                 }
             }
         }
