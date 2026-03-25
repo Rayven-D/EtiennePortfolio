@@ -7,6 +7,16 @@
         
     </div>
     <div class="content" [class.open]="isOpen">
-        <ng-content></ng-content>
+        <div>
+            <ng-content></ng-content>
+        </div>
+        <div class="close-footer" (click)="toggle()">
+            <span class="text">
+                CLOSE
+            </span>
+            <span class="material-icons-outlined">
+                keyboard_arrow_up
+            </span>
+        </div>
     </div>
 </div>
