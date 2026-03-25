@@ -1,4 +1,9 @@
-<div class="carousel">
+<div class="carousel" (mouseenter)="hovering = true" (mouseleave)="hovering = false">
+    <div class="fullscreen-button" (click)="openModal()" [style.display]="hovering ? 'flex' : 'none'">
+            <span class="material-icons-outlined">
+                fullscreen
+            </span>
+        </div>
     <div class="track" id="track" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
         @for(image of images; track $index){
             <div class="slide" [class.active]="$index === currentIndex">
@@ -22,5 +27,40 @@
                 arrow_forward
             </span>
         </div>
+    </div>
+</div>
+
+
+<div id="modal" class="overlay" #modal (click)="closeModal()">
+    <div class="modal" (click)="$event.stopPropagation()">
+        <span class="material-icons-outlined close" (click)="closeModal()">
+            close
+        </span>
+        <div class="carousel">
+        <div class="track" id="track" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+            @for(image of images; track $index){
+                <div class="slide" [class.active]="$index === currentIndex">
+                    <img [src]="image" alt="Image {{$index + 1}}">
+                </div>
+            }
+        </div>
+        <div class="footer">
+            <div class="button" (click)="prev()">
+                <span class="material-icons-outlined">
+                    arrow_back
+                </span>
+            </div>
+            <div class="dots">
+                @for(image of images; track $index){
+                        <span class="dot" [class.active]="$index === currentIndex" (click)="move($index)"></span>
+                    }
+            </div>
+            <div class="button"(click)="next()">
+                <span class="material-icons-outlined">
+                    arrow_forward
+                </span>
+            </div>
+        </div>
+    </div>
     </div>
 </div>

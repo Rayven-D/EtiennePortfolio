@@ -1,0 +1,12 @@
+<div class="expandable">
+    <div class="header" (click)="toggle();">
+        <span class="material-icons-outlined">
+          {{isOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}}
+        </span>
+        <span>{{ title }}</span>
+        
+    </div>
+    <div class="content" [class.open]="isOpen">
+        <ng-content></ng-content>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  background: var(--primary-color);
+  border: 1px solid var(--accent-color);
+}
+
+.content {
+    padding: 0;
+    transition: height 0.3s ease, padding 0.3s ease;
+    height: 0;
+    ::ng-deep & > * {
+        transition: scale 0.25s ease;
+        scale: 0;
+        overflow: hidden;
+  }
+}
+
+.content.open{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+    scale: 1;
+
+    ::ng-deep & > * {
+        scale: 1;
+    }   
+}
