@@ -27,6 +27,8 @@ export class App {
       }else{
         this.currentPage = 0;
       }
+
+      window.scrollTo(0, 0);
     });
   }
 
