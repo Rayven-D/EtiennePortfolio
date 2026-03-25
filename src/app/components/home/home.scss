@@ -119,12 +119,36 @@
             .project-id {
                 position: absolute;
                 background-color: var(--primary-color);
-                color: var(--text-color);
                 padding: .5rem;
                 border: 1px solid var(--accent-color);
                 transform: translate(16px, 16px);
             }
 
+            .project-number{
+                position: absolute;
+                padding: .5rem;
+                font-size: 64px;
+                font-weight: 700;
+                color: var(--primary-color);
+                //transform: translate(150px, 65px);
+                top: 15%;
+                right: 40%;
+            }
+
+            .project-plus, .project-diamond {
+                position: absolute;
+                padding: .5rem;
+                color: var(--highlight-color);
+            }
+
+            .project-plus {
+                top: calc(49% - 1rem);
+                left: 1rem;
+            }
+            .project-diamond {
+                right: 1rem;
+                top: 1rem;
+            }
             .project-card-content {
                 display: flex;        
                 flex-direction: column;  

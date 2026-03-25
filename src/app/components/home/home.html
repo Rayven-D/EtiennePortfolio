@@ -42,6 +42,18 @@
     <section class="projects">
         <div class="project-card fade-in-left custom-button-hover-effect-home" [class.visible]="projectsAnimationLoad[1]" (click)="navigateToProject('streaming-platform')">
             <div class="project-id">PROJ_001</div>
+            <div class="project-number" [style.display]="projec1Hover ? 'none' : 'block'">01</div>
+            <div class="project-plus" [style.display]="projec1Hover ? 'none' : 'block'">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 10H20" stroke="#ED8514" stroke-width="2"/>
+                    <path d="M10 0L10 20" stroke="#ED8514" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="project-diamond" [style.display]="projec1Hover ? 'none' : 'block'">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10.4853" y="-0.828369" width="16" height="16" rx="2" transform="rotate(45 10.4853 -0.828369)" fill="#ED8514"/>
+                </svg>
+            </div>
             <div class="project-card-content" (click)="navigateToProject('streaming-platform')" (mouseenter)="projec1Hover = true;" (mouseleave)="projec1Hover = false">
                     <img [style.display]="!projec1Hover ? 'none' : 'block'" src="assets/images/streaming_platform_ux.png"/>
                     <img [style.display]="!projec1Hover ? 'block' : 'none'" src="assets/images/project_filler.png"/>
@@ -51,10 +63,21 @@
                     <span class="caption view-case-study" [class.hovering]="projec1Hover">View Case Study <span class="material-icons-outlined">arrow_forward</span></span>
                 </div>
             </div>
-
         </div>
         <div class="project-card fade-in-left custom-button-hover-effect-home" [class.visible]="projectsAnimationLoad[0]" (mouseenter)="project2Hover = true;" (mouseleave)="project2Hover = false"> 
             <div class="project-id">PROJ_002</div>
+            <div class="project-number" [style.display]="project2Hover ? 'none' : 'block'">02</div>
+            <div class="project-plus" [style.display]="project2Hover ? 'none' : 'block'">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 10H20" stroke="#ED8514" stroke-width="2"/>
+                    <path d="M10 0L10 20" stroke="#ED8514" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="project-diamond" [style.display]="project2Hover ? 'none' : 'block'">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10.4853" y="-0.828369" width="16" height="16" rx="2" transform="rotate(45 10.4853 -0.828369)" fill="#ED8514"/>
+                </svg>
+            </div>
             <div class="project-card-content">
                 <img src="assets/images/project_filler.png"/>
                 <div class="text">
