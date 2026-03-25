@@ -153,3 +153,12 @@ html, body {
         transform: translateX(0);
     }
 }
+
+a {
+    color: var(--accent-color);
+    text-decoration: underline;
+
+    &:hover {
+        color: var(--highlight-color);
+    }
+}

@@ -6,6 +6,11 @@
   padding: 1rem;
   background: var(--primary-color);
   border: 1px solid var(--accent-color);
+  border-radius: 4px;
+
+  &:hover{
+    color: var(--highlight-color);
+  }
 }
 
 .content {
@@ -39,8 +44,9 @@
     cursor: pointer;
     min-height: 0;
     border: 1px solid var(--accent-color);
+    border-radius: 4px;
     padding: .5rem 0;
-    margin-top: .5rem;
+    margin-top: 1rem;
     &:hover{
         color: var(--highlight-color);
     }
