@@ -54,6 +54,7 @@
                     img{
                         height: 100%;
                         width: 100%;
+                        object-fit: cover;
                         background-color: var(--accent-color);
                         border-radius: 0 0 0 8px;
                     }
@@ -73,11 +74,6 @@
                             width: 8px; 
                             height: 8px;
                             background-color: var(--highlight-color);
-                        }
-                    }
-                    .project-name{
-                        .subtitle1 {
-                            font-weight: 700;
                         }
                     }
 

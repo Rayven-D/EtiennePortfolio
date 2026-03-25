@@ -5,5 +5,6 @@ export const routes: Routes = [
     {path: 'projects', loadComponent: () => import('./components/projects/projects').then(m => m.Projects)},
     {path: 'about', loadComponent: () => import('./components/about/about').then(m => m.About)},
     {path: 'projects/streaming-platform', loadComponent: () => import('./components/project-details/streaming-platform/streaming-platform').then(m => m.StreamingPlatform)},
+    {path: 'projects/financial-management', loadComponent: () => import('./components/project-details/financial-management/financial-management').then(m => m.FinancialManagement)},
     {path: "**", redirectTo: 'home', pathMatch: 'full'}
 ];
