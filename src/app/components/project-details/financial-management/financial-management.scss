@@ -171,14 +171,15 @@
 }
 
 .long-images {
-   width: 100%;
-   display: flex;
-   gap: 1rem;
-   overflow: auto;
-
-   img{
-        height: 100%;
-        width: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    overflow: auto;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    img {
+        width: 100%;
         object-fit: contain;
     }   
 }

@@ -15,7 +15,6 @@ export class FinancialManagement {
     'assets/images/financial-management/phase5/phase5_1.png',
     'assets/images/financial-management/phase5/phase5_2.png',
     'assets/images/financial-management/phase5/phase5_3.png',
-    'assets/images/financial-management/phase5/phase5_4.png',
   ]
 
   constructor(
