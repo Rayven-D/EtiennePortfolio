@@ -12,9 +12,9 @@ import { Expand } from '../../../shared/components/expand/expand';
 export class FinancialManagement {
 
   public phase5Images: string[] = [
-    'assets/images/financial-management/phase5/phase5_1.png',
-    'assets/images/financial-management/phase5/phase5_2.png',
-    'assets/images/financial-management/phase5/phase5_3.png',
+    'assets/images/financial-management/onboarding/onboarding_1.png',
+    'assets/images/financial-management/onboarding/onboarding_2.png',
+    'assets/images/financial-management/onboarding/onboarding_3.png',
   ]
 
   constructor(

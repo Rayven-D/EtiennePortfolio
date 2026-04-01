@@ -15,6 +15,7 @@
 
 .content {
     display: grid;
+    border-top: none;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.3s ease-in-out, padding 0.4s ease-out;
     overflow: hidden;
@@ -22,16 +23,17 @@
     & > div {
         min-height: 0; 
     }
-
+    
     &:not(.open) .close-footer{
         height: 0;
         padding:0;
         margin-top:0;
-        border: none;
-    }
+        border:  0px solid transparent;
+    }   
 }
 
 .content.open{
+    border: 1px solid var(--accent-color);
     grid-template-rows: 1fr;
     padding: 1rem;  
 }
@@ -39,6 +41,7 @@
 .close-footer{
     display: flex;
     width: 100%;
+    height: fit-content;
     align-items: center;
     justify-content: center;
     cursor: pointer;
