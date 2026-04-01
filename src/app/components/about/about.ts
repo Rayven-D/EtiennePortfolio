@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class About {
 
   public skills : {skillName: string, level: number}[] = [
-    {skillName: 'Create Problem-Solving', level: 90},
+    {skillName: 'Creative Problem-Solving', level: 90},
     {skillName: 'Feedback-Driven', level: 90},
     {skillName: 'Visual & UX Foundations', level: 85},
     {skillName: 'Interaction & Prototyping', level: 85},
