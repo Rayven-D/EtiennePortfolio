@@ -41,9 +41,9 @@
      <section class="project-overview column">
         <span class="subtitle2">PROJECT_OVERVIEW</span>
         <span>
-            Designed a cross-platform streaming experience using Reddit's brand system for both TV and mobile. <br/>
-            Focused on creating intuitive navigation and clear interaction across different input types, with special attention 
-            to remote-based navigation on TV. The goal was to make content browsing and discovery simple, consistent, and easy 
+            Designed a cross-platform streaming experience using <b>Reddit's brand system</b> for both <b>TV</b> and <b>mobile</b>. <br/>
+            Focused on creating <b>intuitive navigation</b> and clear interaction across different input types, with special attention 
+            to <b>remote-based navigation</b> on TV. The goal was to make content browsing and discovery simple, consistent, and easy 
             to use across devices.
         </span>
      </section>
@@ -75,17 +75,19 @@
         <div class="phase-content">
             <div class="text">
                 <span class="description-text">
-                    Conducted research on Reddit's brand system and analyzed streaming 
-                    platform patterns to understand navigation behaviors across TV and mobile environments. 
-                    Identified key usability challenges specific to remote-based interaction.
+                    I started by diving into Reddit's brand guidelines and studying how major 
+                    streaming platforms like Netflix and Apple TV handle navigation. The goal was understanding 
+                    how people browse content on TV versus mobile, and why remote-based navigation feels so different from touch
                 </span>
+                <span class="description-text list-header">Key research activities:</span>
                 <ul>
-                    <li>Analysis of Reddit brand guidelines (color, typography, tone)</li>
-                    <li>Competitive audit of streaming platforms (Netflix, Apple TV, etc.)</li>
-                    <li>Navigation pattern analysis for TV interfaces</li>
-                    <li>Identification of pain points in remote-based navigation</li>
-                    <li>Review of mobile vs TV interaction differences</li>
+                    <li>Analysis of Reddit's visual identity and tone</li>
+                    <li>Study of TV interface patterns from Netflix, Apple TV, and others</li>
+                    <li>Identification of key pain points in remote-based navigation</li>
                 </ul>
+            </div>
+            <div class="image">
+                <img src="assets/images/streaming-platform/phase1.png">
             </div>
         </div>
      </section>
@@ -101,23 +103,22 @@
                 <span class="phase-caption">[IDEATION & WIREFRAMING]</span>
             </div>
         </header>
-        <div class="phase-content row">
+        <div class="phase-content">
             <div class="text">
                 <span class="description-text">
-                    Explored multiple layout directions focusing on navigation clarity, content hierarchy, 
-                    and cross-platform consistency. Developed low-fidelity structures to test usability and 
-                    interaction flow.
+                    Armed with research insights, I moved into exploration mode. I sketched different layout structures 
+                    and tested how content could flow across platforms. The big question? Should navigation be horizontal 
+                    or vertical? And what patterns could actually translate between TV and mobile?
                 </span>
+                <span class="description-text list-header">I focused on:</span>
                 <ul>
-                    <li>Sketching and layout exploration (multiple navigation structures)</li>
-                    <li>Information architecture for content browsing</li>
-                    <li>Low-fidelity wireframes for TV and mobile</li>
-                    <li>Exploration of horizontal vs vertical navigation systems</li>
-                    <li>Early validation of navigation flows</li>
+                    <li>Sketching multiple navigation approaches</li>
+                    <li>Building low-fidelity wireframes for both platforms</li>
+                    <li>Testing horizontal vs. vertical browsing patterns</li>
                 </ul>
             </div>
             <div class="image">
-                <app-picture-carosel [images]="phase2Images"></app-picture-carosel>
+                <img src="assets/images/streaming-platform/phase2.png">
             </div>
         </div>
      </section>     
@@ -136,16 +137,16 @@
         <div class="phase-content">
             <div class="text">
                 <span class="description-text">
-                    Built interactive components and defined behavior systems for both
-                    TV and mobile interfaces. Focused on creating clear feedback and 
-                    focus states to support remote navigation.
+                    This is where things got real. I built interactive prototypes with working 
+                    focus states for TV and touch interactions for mobile. Every button, every 
+                    transition needed to feel responsive and clear, especially on TV where users 
+                    rely entirely on visual feedback.
                 </span>
+                <span class="description-text list-header">The prototype included:</span>
                 <ul>
-                    <li>Development of interactive UI components</li>
-                    <li>Focus state system for remote navigation (TV)</li>
-                    <li>Motion and transition design for feedback clarity</li>
-                    <li>Cross-platform interaction consistency</li>
-                    <li>Prototype flows for core user journeys</li>
+                    <li>Interactive components with motion design</li>
+                    <li>Focus state system for remote navigation</li>
+                    <li>Core user flows across both platforms</li>
                 </ul>
             </div>
             <div class="image">
@@ -168,17 +169,15 @@
         <div class="phase-content">
             <div class="text">
                 <span class="description-text">
-                    Designed a streaming experience optimized for large screens and 
-                    remote-based interaction. Focused on creating clear navigation 
-                    patterns and strong visual feedback to support directional input.
+                    The TV experience needed bold focus states and simplified hierarchy. 
+                    Viewing from 10 feet away is completely different from holding a phone. 
+                    Everything had to be larger, clearer, and easier to navigate with just four directional buttons.
                 </span>
+                <span class="description-text list-header">Design priorities:</span>
                 <ul>
-                    <li>Horizontal browsing system for content discovery</li>
-                    <li>Strong focus states to indicate current selection</li>
-                    <li>Clear visual feedback for all interactions</li>
-                    <li>Optimized layout for readability at distance</li>
-                    <li>Navigation designed for directional (D-pad) input</li>
-                    <li>Reduced cognitive load through simplified hierarchy</li>
+                    <li>Horizontal browsing optimized for D-pad controls</li>
+                    <li>Strong visual feedback for focus states</li>
+                    <li>Large typography designed for distance viewing</li>
                 </ul>
             </div>
             <div class="image">
@@ -201,21 +200,52 @@
         <div class="phase-content row">
             <div class="text">
                 <span class="description-text">
-                    Adapted the experience for mobile by prioritizing speed, 
-                    accessibility, and thumb-friendly interaction patterns. 
-                    Simplified navigation structure to support quick content access.
+                    Mobile was all about speed and accessibility. Vertical scrolling, 
+                    thumb-friendly zones, and streamlined navigation. Everything optimized 
+                    for quick, on-the-go browsing.
                 </span>
+                <span class="description-text list-header">Mobile optimizations:</span>
                 <ul>
-                    <li>Vertical scrolling for intuitive browsing</li>
-                    <li>Thumb-friendly layout and interaction zones</li>
-                    <li>Simplified navigation with reduced steps</li>
-                    <li>Faster access to key content and actions</li>
-                    <li>Touch-based gestures replacing directional input</li>
-                    <li>Optimized density for smaller screens</li>
+                    <li>Vertical scrolling with thumb-friendly layout</li>
+                    <li>Faster access to content with simplified steps</li>
+                    <li>Touch gestures replacing directional controls</li>
                 </ul>
             </div>
             <div class="image">
                 <app-picture-carosel [images]="phase5Images"></app-picture-carosel>
+            </div>
+        </div>
+    </section> 
+
+    <!-- project relection -->
+    <section class="phase-card reflection column">
+        <header>
+            <div class="phase-number">
+                <svg style="transform: translateY(4px);" width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0L17.2706 7.23175C17.8637 10.6076 20.5416 13.2306 23.929 13.7537L32 15L23.929 16.2463C20.5416 16.7694 17.8637 19.3924 17.2706 22.7683L16 30L14.7294 22.7682C14.1363 19.3924 11.4584 16.7694 8.07099 16.2463L0 15L8.07099 13.7537C11.4584 13.2306 14.1363 10.6076 14.7294 7.23175L16 0Z" fill="#191717"/>
+                </svg>
+            </div>
+            <div class="phase-title column">
+                <span class="phase-name subtitle2--bold">PROJECT REFLECTION</span>
+                <span class="phase-caption">[OUTCOME & LEARNINGS]</span>
+            </div>
+        </header>
+        <div class="phase-content">
+            <div class="text">
+                <span class="description-text">
+                    <b>Outcome</b><br/><br/>
+                    The final designs were delivered as a comprehensive Figma prototype 
+                    with full interaction specs for both platforms. It became a 
+                    proof-of-concept for how Reddit could expand into streaming, showing 
+                    that their brand could adapt to entirely new contexts.
+                </span>
+                <span class="description-text list-header"><b>Key Learnings</b></span>
+                <ul>
+                    <li>States are everything on TV. What works on mobile doesn't translate. Users need constant visual feedback</li>
+                    <li>Simpler is better for TV, even if it means showing less content per screen</li>
+                    <li>Horizontal navigation won out for TV after testing showed it felt more natural with D-pad controls</li>
+                    <li>Platform constraints aren't limitations. They're design opportunities</li>
+                </ul>
             </div>
         </div>
     </section> 

@@ -116,26 +116,38 @@
             gap: .5rem;
             padding: 1rem;
 
-            ul {
-                border-left: 3px solid var(--highlight-color);
-            }
+            .text{
 
+                .list-header{
+                    display: flex;
+                    align-items: flex-end;
+                    height: 3rem;
+                }
+
+                ul {
+                    border-left: 3px solid var(--highlight-color);
+                }
+                
+                
+            }
             &.row {
                 flex-direction: row;
+                .text{
+                    width: 60%;
+                }
 
-            .text{
-                width: 60%;
+                .image{
+                    width: 40% !important;
+                }
             }
-
             .image{
-                width: 40%;
+                width: 100%;
                 img{
                     background-color: var(--accent-color);
                     width: 100%;
                     height: min-content;
                     object-fit: fill;
                 }
-            }
             }
         }
 
