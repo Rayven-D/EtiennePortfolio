@@ -86,15 +86,13 @@
             .socials-grid {
                 display: flex;
                 gap: .25rem;
+                flex-direction: column;
 
                 .socials-button {
                     cursor: pointer;
-                    font-weight: 700;
-                    border: 1px solid var(--accent-color);
-                    border-radius: 8px;
+                    text-decoration: underline;
                     width: min-content;
-                    padding: .5rem;
-
+                    padding: .15rem;
                     &:hover {
                         color: var(--primary-color);
                     }
@@ -102,4 +100,8 @@
             }
         }
     }
+}
+
+.footer-text{
+    font-size: .85rem;
 }

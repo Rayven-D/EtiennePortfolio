@@ -36,4 +36,8 @@ export class App {
     console.log('here')
     this._router.navigate([path]);
   }
+
+  public openLink(url: string): void {
+    window.open(url, '_blank');
+  }
 }
