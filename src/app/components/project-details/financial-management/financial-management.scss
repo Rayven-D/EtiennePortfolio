@@ -170,12 +170,12 @@
         width: 30%;
         background-color: var(--accent-color);
         color: var(--primary-color);
-        gap: .5rem;
         padding: .5rem 1rem;
         border-radius: 4px;
         margin: 0 auto;
         margin-bottom: 1rem;
         div {
+            gap: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;

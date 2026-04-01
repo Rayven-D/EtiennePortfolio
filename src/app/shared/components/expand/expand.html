@@ -1,5 +1,5 @@
 <div class="expandable">
-    <div class="header" (click)="toggle();">
+    <div class="header" [class.open]="isOpen" (click)="toggle()">
         <span class="material-icons-outlined">
           {{isOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}}
         </span>

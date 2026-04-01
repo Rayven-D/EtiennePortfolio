@@ -11,6 +11,11 @@
   &:hover{
     color: var(--highlight-color);
   }
+
+  &.open{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 .content {
@@ -34,8 +39,10 @@
 
 .content.open{
     border: 1px solid var(--accent-color);
+    border-top: none;
     grid-template-rows: 1fr;
     padding: 1rem;  
+    border-radius: 0 0 4px 4px;
 }
 
 .close-footer{
