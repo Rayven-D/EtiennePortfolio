@@ -89,10 +89,11 @@
                 flex-direction: column;
 
                 .socials-button {
+                    border-radius: 4px;
                     cursor: pointer;
                     text-decoration: underline;
                     width: min-content;
-                    padding: .15rem;
+                    padding: .15rem .25rem;
                     &:hover {
                         color: var(--primary-color);
                     }
