@@ -138,6 +138,8 @@
 
                 .image{
                     width: 40%;
+                    display: flex;
+                    align-items: center;
                     img{
                         width: 100%;
                         height: min-content;
@@ -151,6 +153,10 @@
                     width: 225px;
                     right: 10%;
                     bottom: 1rem;
+
+                    &.reflections {
+                        bottom: 35%;
+                    }
                 }
             }
         }
@@ -166,7 +172,7 @@
         }
     }
 
-    .return-bottom-button{
+    .return-bottom-button, .figma-prototype{
         width: 30%;
         background-color: var(--accent-color);
         color: var(--primary-color);
@@ -181,6 +187,10 @@
             justify-content: center;
             width: 100%;
         }
+    }
+
+    .figma-prototype{
+        width: fit-content;
     }
 }
 

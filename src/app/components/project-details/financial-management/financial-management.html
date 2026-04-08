@@ -57,6 +57,7 @@
         <span class="subtitle2">TARGET_AUDIENCE</span>
         <span class="reading-text">
             Designed for students managing personal finances for the first time.
+            <br/><br/>
             <ul>
                 <li>Students learning to budget and track spending</li>
                 <li>Users who want simple, visual financial feedback</li>
@@ -65,6 +66,19 @@
             </ul>
         </span>
      </section>
+
+     <!-- my contribution -->
+      <section class="my-contribution column">
+        <span class="subtitle2">MY_CONTRIBUTION</span>
+        <span class="reading-text">
+            My major roles within the team consisted of
+            <ul>
+                <li>UX Designer</li>
+                <li>Design System Lead</li>
+                <li>Visual Designer</li>
+            </ul>
+        </span>
+      </section>
 
       <!-- phase1: research -->
     <section class="phase-card phase1 column">
@@ -87,8 +101,9 @@
                 <span class="list-header">Key research activities:</span>
                 <ul>
                     <li>Competitive analysis of budgeting and fintech apps</li>
+                    <li>Develop a HMW Statement</li>
                     <li>Research on student financial behaviors and pain points</li>
-                    <li>Analysis of how financial data visualization affects user emotion</li>
+                    <li>How data visuals affect how users understand and feel about their finances</li>
                 </ul>
             </div>
             <div class="image-pop-out">
@@ -111,14 +126,14 @@
     <div class="phase-content ">
         <div class="text reading-text">
             <span class="description-text">
-                With research insights, we developed concepts and built the visual identity. 
-                The objective was a friendly, approachable aesthetic that felt less like a bank and more like a helpful companion.
+                With research insights, we developed concepts and built the 
+                visual identity. The objective was a friendly, approachable aesthetic that felt less like a bank and more like a helpful companion.
             </span>
             <span class="list-header">I focused on:</span>
             <ul>
-                <li>Sketching layout concepts and early ideas</li>
+                <li>Sketching low fidelity wireframes and early concept ideas</li>
                 <li>Development of branding (color, typography, tone)</li>
-                <li>Exploration of a friendly and non-intimidating visual language</li>
+                <li>Exploration of a friendly and non-intimidating visual language and ux writing</li>
             </ul>
         </div>
         <div class="image">
@@ -172,7 +187,7 @@
             <span class="phase-caption">[TESTING & ITERATION]</span>
         </div>
     </header>
-    <div class="phase-content">
+    <div class="phase-content row">
         <div class="text reading-text">
             <span class="description-text">
                 Testing revealed how users interpreted the budget visuals and where confusion occurred. 
@@ -185,6 +200,9 @@
                 <li>Evaluation of how quickly users interpret spending status</li>
                 <li>Iteration on hierarchy and interaction patterns based on feedback</li>
             </ul>
+        </div>
+        <div class="image">
+            <img src="assets/images/financial-management/phase4.png" alt="Project Image"/>
         </div>
     </div>
     </section>
@@ -203,19 +221,25 @@
     <div class="phase-content">
         <div class="text reading-text">
             <span class="description-text">
-                Tested designs to evaluate usability, clarity, and emotional tone, ensuring the experience felt supportive rather than overwhelming.
+                The final designs integrated clean layouts, supportive visuals, and intuitive interactions. 
+                The result was a budgeting app that felt approachable, not intimidating.
             </span>
+            <span class="list-header">Final Deliverables:</span>
             <ul>
-                <li>Usability testing on understanding budget visuals</li>
-                <li>Evaluation of how quickly users interpret spending status</li>
-                <li>Identification of friction in navigation and layout</li>
-                <li>Iteration on hierarchy and interaction patterns</li>
-                <li>Refinement based on team and user feedback</li>
+                <li>Complete high-fidelity mobile screens</li>
+                <li>Interactive prototype with working user flows</li>
+                <li>Comprehensive design system documentation</li>
+                <li>Usability Testing Folder</li>
             </ul>
         </div>
         <div class="image" style="width:80%; margin: 0 auto;">
             <img src="assets/images/financial-management/phase5.png" alt="Project Image"/>
         </div>
+        <section class="figma-prototype custom-button-hover-effect">
+            <div (click)="navigateToFigma()">
+                <span class="text">Figma Prototype</span>
+            </div>
+        </section>
     </div>
     </section>
 
@@ -224,6 +248,46 @@
             <app-picture-carosel [images]="phase5Images"></app-picture-carosel>
         </div>
     </app-expand>
+
+    <!-- project reflection -->
+     <section class="phase-card reflection column">
+         <header>
+            <div class="phase-number">
+                <svg style="transform: translateY(4px);" width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0L17.2706 7.23175C17.8637 10.6076 20.5416 13.2306 23.929 13.7537L32 15L23.929 16.2463C20.5416 16.7694 17.8637 19.3924 17.2706 22.7683L16 30L14.7294 22.7682C14.1363 19.3924 11.4584 16.7694 8.07099 16.2463L0 15L8.07099 13.7537C11.4584 13.2306 14.1363 10.6076 14.7294 7.23175L16 0Z" fill="#191717"/>
+                </svg>
+            </div>
+            <div class="phase-title column">
+                <span class="phase-name subtitle2--bold">PROJECT REFLECTION</span>
+                <span class="phase-caption">[OUTCOME & LEARNINGS]</span>
+            </div>
+        </header>
+        <div class="phase-content row">
+            <div class="text reading-text">
+                <span class="description-text">
+                    <b>Outcome</b><br/><br/>
+                    The final product delivers a clearer and more manageable budgeting experience.
+                    <ul>
+                        <li>Simplified navigation reduced friction between key actions</li>
+                        <li>Graphs and visuals made financial data easier to understand</li>
+                        <li>A consistent design language improved usability and familiarity</li>
+                    </ul>
+                    The result is an experience that feels structured without being overwhelming.
+                </span>
+                <span class="description-text list-header"><b>Key Learnings</b></span>
+                <ul>
+                    <li>Clear structure matters more than features when reducing overwhelm</li>
+                    <li>Visuals help turn complex financial data into something easier to understand</li>
+                    <li>Consistency across screens makes the product easier to learn and use</li>
+                    <li>Strong team communication keeps the project aligned and focused</li>
+                    <li>Simplicity comes from choosing what matters, not just removing things</li>
+                </ul>
+            </div>
+            <div class="image-pop-out reflections">
+                <img [style.background-color]="'transparent'" src="assets/images/financial-management/reflection.png" alt="Project Image"/>
+            </div>
+        </div>
+     </section>
 
     <section class="return-bottom-button custom-button-hover-effect">
         <div (click)="navigateToProjects()">
